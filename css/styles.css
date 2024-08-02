@@ -13,11 +13,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: linear-gradient(to right, rgba(255, 100, 100, 0.3), rgba(255, 150, 50, 0.3), rgba(255, 230, 100, 0.3), rgba(100, 255, 100, 0.3), rgba(100, 200, 255, 0.3), rgba(150, 100, 255, 0.3));
-  padding: 2rem;
+  padding: 2rem 0 0;
 }
 
 .container {
   display: flex;
+  padding: 0 2rem 2rem;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
@@ -26,7 +27,8 @@ body {
   flex: 1;
 }
 
-main, .hobbys {
+main,
+.hobbys {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   padding: 2rem;
@@ -40,6 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .hobbys-container {
@@ -51,7 +54,8 @@ main {
   gap: 2rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #333;
   margin-bottom: 1rem;
   text-align: center;
@@ -67,11 +71,14 @@ h2 {
   color: #7f7fd5;
 }
 
-p, ul, a {
+p,
+ul,
+a {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #333;
   margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 #welcome {
@@ -79,12 +86,17 @@ p, ul, a {
   font-weight: bold;
   display: block;
   text-align: center;
-  margin: 1rem 0;
-  color: #7f7fd5;
+  margin: 1.2rem 0;
+  color: #e0e0ff;
   border: 2px solid #7f7fd5;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0.5rem 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-color: rgba(2, 0, 36, 0.9);
+  background-size: cover;
+  text-shadow: 0 0 10px rgba(160, 160, 255, 0.7), 0 0 20px rgba(120, 120, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #foto {
@@ -97,12 +109,28 @@ p, ul, a {
      object-fit: cover;
 }
 
-#city {
+#git {
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: #7f7fd5;
   color: #333;
   font-weight: bold;
+}
+
+#git:hover {
+  transform: scale(1.1);
+  color: #7f7fd5;
+}
+
+#icons {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.6rem;
+  justify-content: center;
+}
+#icons img {
+  width: 80px;
+  height: 50px;
 }
 
 .hobbys ul {
@@ -119,16 +147,22 @@ p, ul, a {
   transition: opacity 0.3s ease;
 }
 
+.hobbys a:hover {
+  color: #7f7fd5;
+  cursor: pointer;
+}
+
 .hobbys li:hover::after {
   opacity: 1;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #7f7fd5;
   color: white;
-  margin-top: 2rem;
+  width: 100%;
+  margin-top: auto;
 }
 
 footer p {
@@ -139,13 +173,15 @@ footer p {
 
 @media (max-width: 768px) {
   body {
-    padding: 1rem;
+    padding: 1rem 0 0;
   }
   .container {
+    padding: 0 1rem 1rem;
     flex-direction: column;
     align-items: center;
   }
-  main, .hobbys-container {
+  main,
+  .hobbys-container {
     max-width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,160 +1,197 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(
-        to right,
-        rgba(255, 100, 100, 0.3),
-        rgba(255, 150, 50, 0.3),
-        rgba(255, 230, 100, 0.3),
-        rgba(100, 255, 100, 0.3),
-        rgba(100, 200, 255, 0.3),
-        rgba(150, 100, 255, 0.3)
-    );
-    padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgba(255, 100, 100, 0.3),
+    rgba(255, 150, 50, 0.3),
+    rgba(255, 230, 100, 0.3),
+    rgba(100, 255, 100, 0.3),
+    rgba(100, 200, 255, 0.3),
+    rgba(150, 100, 255, 0.3)
+  );
+  padding: 2rem 0 0;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex: 1;
+  display: flex;
+  padding: 0 2rem 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
 }
 
-main, .hobbys {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+main,
+.hobbys {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 main {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .hobbys-container {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-h1, h2 {
-    color: #333;
-    margin-bottom: 1rem;
-    text-align: center;
+h1,
+h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 h1 {
-    font-size: 1.8rem;
-    margin-top: 1rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #7f7fd5;
+  font-size: 1.5rem;
+  color: #7f7fd5;
 }
 
-p, ul, a {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #333;
-    margin-bottom: 1rem;
+p,
+ul,
+a {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 #welcome {
-    font-size: 1.3rem;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin: 1rem 0;
-    color: #7f7fd5; 
-    border: 2px solid #7f7fd5;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 1.2rem 0;
+  color: #e0e0ff;
+  border: 2px solid #7f7fd5;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-color: rgba(2, 0, 36, 0.9);
+  background-size: cover;
+  text-shadow: 0 0 10px rgba(160, 160, 255, 0.7),
+    0 0 20px rgba(120, 120, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #foto {
-    border-radius: 50%;
-    border: 3px solid #005b96;
-    width: 200px;
-    height: 200px;
-    margin: 1rem 0;
-    object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #005b96;
+  width: 200px;
+  height: 200px;
+  margin: 1rem 0;
+  object-fit: cover;
 }
 
-#city {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #7f7fd5;
-    color: #333;
-    font-weight: bold;
+#git {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #7f7fd5;
+  color: #333;
+  font-weight: bold;
+}
+
+#git:hover {
+  transform: scale(1.1);
+  color: #7f7fd5;
+}
+
+#icons {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.6rem;
+  justify-content: center;
+  img {
+    width: 80px;
+    height: 50px;
+  }
 }
 
 .hobbys ul {
-    list-style: none;
+  list-style: none;
 }
 
 .hobbys li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hobbys li::after {
-    content: " ⭐";
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  content: " ⭐";
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hobbys a:hover {
+  color: #7f7fd5;
+  cursor: pointer;
 }
 
 .hobbys li:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #7f7fd5;
-    color: white;
-    margin-top: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #7f7fd5;
+  color: white;
+  width: 100%;
+  margin-top: auto;
 }
 
 footer p {
-    font-size: 0.9rem;
-    margin: 0;
-    color: white;
+  font-size: 0.9rem;
+  margin: 0;
+  color: white;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
+  body {
+    padding: 1rem 0 0;
+  }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .container {
+    padding: 0 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    main, .hobbys-container {
-        max-width: 100%;
-    }
+  main,
+  .hobbys-container {
+    max-width: 100%;
+  }
 }
